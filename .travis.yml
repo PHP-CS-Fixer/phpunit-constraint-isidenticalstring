@@ -21,6 +21,11 @@ env:
         - DEFAULT_COMPOSER_FLAGS="--no-interaction --no-progress"
         - COMPOSER_FLAGS=""
 
+matrix:
+    include:
+        - php: nightly
+          env: COMPOSER_FLAGS="--ignore-platform-reqs"
+
 stages:
     - Static Code Analysis
     - Test
