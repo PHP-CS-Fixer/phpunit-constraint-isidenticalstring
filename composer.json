@@ -1,41 +1,41 @@
 {
-  "name": "php-cs-fixer/phpunit-constraint-isidenticalstring",
-  "type": "library",
-  "description": "Constraint for testing strings considering not-same line endings.",
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Dariusz Rumiński",
-      "email": "dariusz.ruminski@gmail.com"
-    }
-  ],
-  "require": {
-    "php": "^5.5 || ^7.0",
-    "phpunit/phpunit": "^5.7.23 || ^6.4.3 || ^7.0 || ^8.0",
-    "phpunitgoodpractices/polyfill": "^1.1"
-  },
-  "conflict": {
-    "hhvm": "*"
-  },
-  "require-dev": {
-    "johnkary/phpunit-speedtrap": "^1.1 || ^2.0 || ^3.0",
-    "symfony/phpunit-bridge": "^3.2.2 || ^4.0"
-  },
-  "config": {
-    "optimize-autoloader": true,
-    "sort-packages": true
-  },
-  "autoload": {
-    "psr-4": {
-      "PhpCsFixer\\PhpunitConstraintIsIdenticalString\\": "src/"
+    "name": "php-cs-fixer/phpunit-constraint-isidenticalstring",
+    "type": "library",
+    "description": "Constraint for testing strings considering not-same line endings.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dariusz Rumiński",
+            "email": "dariusz.ruminski@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^5.5 || ^7.0",
+        "phpunit/phpunit": "^5.7.23 || ^6.4.3 || ^7.0 || ^8.0",
+        "phpunitgoodpractices/polyfill": "^1.1"
     },
-    "files": [
-      "src/Constraint/IsIdenticalString.php"
-    ]
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "PhpCsFixer\\PhpunitConstraintIsIdenticalString\\Tests\\": "tests/"
+    "conflict": {
+        "hhvm": "*"
+    },
+    "require-dev": {
+        "johnkary/phpunit-speedtrap": "^1.1 || ^2.0 || ^3.0",
+        "symfony/phpunit-bridge": "^3.2.2 || ^4.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpCsFixer\\PhpunitConstraintIsIdenticalString\\": "src/"
+        },
+        "files": [
+            "src/Constraint/IsIdenticalString.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpCsFixer\\PhpunitConstraintIsIdenticalString\\Tests\\": "tests/"
+        }
     }
-  }
 }
