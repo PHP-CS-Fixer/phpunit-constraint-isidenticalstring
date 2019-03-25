@@ -1,0 +1,9 @@
+{
+    "symbol-whitelist": [
+        "PhpCsFixer\\PhpunitConstraintIsIdenticalString\\Constraint\\IsIdenticalString",
+
+        "null", "true", "false",
+        "static", "self", "parent",
+        "array", "string", "int", "float", "bool", "iterable", "callable", "void"
+    ]
+}
