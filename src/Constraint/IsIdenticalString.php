@@ -15,6 +15,8 @@ if (version_compare(\PHPUnit\Runner\Version::id(), '7.0.0') < 0) {
     class_alias(IsIdenticalStringForV5::class, IsIdenticalString::class);
 } elseif (version_compare(\PHPUnit\Runner\Version::id(), '8.0.0') < 0) {
     class_alias(IsIdenticalStringForV7::class, IsIdenticalString::class);
-} else {
+} elseif (version_compare(\PHPUnit\Runner\Version::id(), '9.0.0') < 0) {
     class_alias(IsIdenticalStringForV8::class, IsIdenticalString::class);
+} else {
+    class_alias(IsIdenticalStringForV9::class, IsIdenticalString::class);
 }
