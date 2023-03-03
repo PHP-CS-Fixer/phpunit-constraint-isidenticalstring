@@ -14,13 +14,7 @@ $finder = PhpCsFixer\Finder::create()
     ->in(__DIR__)
 ;
 
-if (PHP_VERSION_ID < 70000) {
-    $finder
-        ->notPath('tests/Test/Constraint/IsIdenticalStringForV7.php')
-    ;
-}
-
-return PhpCsFixer\Config::create()
+return (new PhpCsFixer\Config)
     ->setRiskyAllowed(true)
     ->setRules([
         '@PhpCsFixer'               => true,

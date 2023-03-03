@@ -1,8 +1,8 @@
 {
     "name": "php-cs-fixer/phpunit-constraint-isidenticalstring",
-    "type": "library",
     "description": "Constraint for testing strings considering not-same line endings.",
     "license": "MIT",
+    "type": "library",
     "authors": [
         {
             "name": "Dariusz Rumiński",
@@ -18,10 +18,6 @@
         "johnkary/phpunit-speedtrap": "^1.1 || ^2.0 || ^3.0",
         "symfony/phpunit-bridge": "^3.2.2 || ^4.0"
     },
-    "config": {
-        "optimize-autoloader": true,
-        "sort-packages": true
-    },
     "autoload": {
         "psr-4": {
             "PhpCsFixer\\PhpunitConstraintIsIdenticalString\\": "src/"
@@ -34,5 +30,9 @@
         "psr-4": {
             "PhpCsFixer\\PhpunitConstraintIsIdenticalString\\Tests\\": "tests/"
         }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
     }
 }
