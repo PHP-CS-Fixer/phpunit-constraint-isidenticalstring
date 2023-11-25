@@ -27,6 +27,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        include:
           - php-version: '7.0'
             composer-flags: '--prefer-stable --prefer-lowest'
           - php-version: '7.1'
