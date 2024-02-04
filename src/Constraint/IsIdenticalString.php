@@ -11,11 +11,13 @@
 
 namespace PhpCsFixer\PhpunitConstraintIsIdenticalString\Constraint;
 
-if (version_compare(\PHPUnit\Runner\Version::id(), '7.0.0') < 0) {
+use PHPUnit\Runner\Version;
+
+if (version_compare(Version::id(), '7.0.0') < 0) {
     class_alias(IsIdenticalStringForV5::class, IsIdenticalString::class);
-} elseif (version_compare(\PHPUnit\Runner\Version::id(), '8.0.0') < 0) {
+} elseif (version_compare(Version::id(), '8.0.0') < 0) {
     class_alias(IsIdenticalStringForV7::class, IsIdenticalString::class);
-} elseif (version_compare(\PHPUnit\Runner\Version::id(), '9.0.0') < 0) {
+} elseif (version_compare(Version::id(), '9.0.0') < 0) {
     class_alias(IsIdenticalStringForV8::class, IsIdenticalString::class);
 } else {
     class_alias(IsIdenticalStringForV9::class, IsIdenticalString::class);
