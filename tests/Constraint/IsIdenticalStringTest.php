@@ -28,11 +28,11 @@ final class IsIdenticalStringTest extends TestCase
         );
         if (\is_callable([$this, 'expectExceptionMessageMatches'])) {
             $this->expectExceptionMessageMatches(
-                '#^Failed asserting that two strings are identical\.[\n] \#Warning\: Strings contain different line endings\! Debug using remapping \["\\\\r" => "R", "\\\\n" => "N", "\\\\t" => "T"\]\:\n \-N\n \+RN$#'
+                '#^Failed asserting that two strings are identical\.[\n] \#Warning\: Strings contain different line endings\! Debug using remapping \["\\\r" => "R", "\\\n" => "N", "\\\t" => "T"\]\:\n \-N\n \+RN$#'
             );
         } else {
             $this->expectExceptionMessageRegExp(
-                '#^Failed asserting that two strings are identical\.[\n] \#Warning\: Strings contain different line endings\! Debug using remapping \["\\\\r" => "R", "\\\\n" => "N", "\\\\t" => "T"\]\:\n \-N\n \+RN$#'
+                '#^Failed asserting that two strings are identical\.[\n] \#Warning\: Strings contain different line endings\! Debug using remapping \["\\\r" => "R", "\\\n" => "N", "\\\t" => "T"\]\:\n \-N\n \+RN$#'
             );
         }
 
