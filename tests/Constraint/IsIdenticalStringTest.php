@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of PHP CS Fixer / PHPUnit Constraint IsIdenticalString.
  *
@@ -21,7 +23,7 @@ use PHPUnit\Framework\TestCase;
  */
 final class IsIdenticalStringTest extends TestCase
 {
-    public function testSameStringsConstraintFail()
+    public function testSameStringsConstraintFail(): void
     {
         $this->expectException(
             'PHPUnit\Framework\ExpectationFailedException'
@@ -31,7 +33,7 @@ final class IsIdenticalStringTest extends TestCase
                 '#^Failed asserting that two strings are identical\.[\n] \#Warning\: Strings contain different line endings\! Debug using remapping \["\\\r" => "R", "\\\n" => "N", "\\\t" => "T"\]\:\n \-N\n \+RN$#'
             );
         } else {
-            $this->expectExceptionMessageRegExp(
+            $this->expectExceptionMessageMatches(
                 '#^Failed asserting that two strings are identical\.[\n] \#Warning\: Strings contain different line endings\! Debug using remapping \["\\\r" => "R", "\\\n" => "N", "\\\t" => "T"\]\:\n \-N\n \+RN$#'
             );
         }
