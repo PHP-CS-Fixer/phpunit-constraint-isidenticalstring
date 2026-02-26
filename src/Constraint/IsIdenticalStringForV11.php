@@ -20,7 +20,7 @@ use PHPUnit\Framework\ExpectationFailedException;
  *
  * @internal
  */
-final class IsIdenticalStringForV8 extends Constraint
+final class IsIdenticalStringForV11 extends Constraint
 {
     /**
      * @var mixed
@@ -41,7 +41,7 @@ final class IsIdenticalStringForV8 extends Constraint
         $this->isIdentical = new IsIdentical($this->value);
     }
 
-    public function evaluate($other, string $description = '', bool $returnResult = false)
+    public function evaluate($other, string $description = '', bool $returnResult = false): ?bool
     {
         try {
             return $this->isIdentical->evaluate($other, $description, $returnResult);
