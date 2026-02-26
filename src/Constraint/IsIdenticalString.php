@@ -13,4 +13,4 @@ namespace PhpCsFixer\PhpunitConstraintIsIdenticalString\Constraint;
 
 use PHPUnit\Runner\Version;
 
-class_alias(IsIdenticalStringForV11::class, IsIdenticalString::class);
+class_alias(IsIdenticalStringForV9::class, IsIdenticalString::class);

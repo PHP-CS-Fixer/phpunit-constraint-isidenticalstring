@@ -20,7 +20,7 @@ use PHPUnit\Framework\ExpectationFailedException;
  *
  * @internal
  */
-final class IsIdenticalStringForV11 extends Constraint
+final class IsIdenticalStringForV9 extends Constraint
 {
     /**
      * @var mixed
