@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /*
  * This file is part of PHP CS Fixer / PHPUnit Constraint IsIdenticalString.
  *
@@ -10,7 +12,5 @@
  */
 
 namespace PhpCsFixer\PhpunitConstraintIsIdenticalString\Constraint;
-
-use PHPUnit\Runner\Version;
 
 class_alias(IsIdenticalStringForV9::class, IsIdenticalString::class);
